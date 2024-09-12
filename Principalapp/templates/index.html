@@ -2,7 +2,7 @@
 {% load static %}
     
 {% block title %}
-xanduria
+🕹 xanduria 🕹
 {% endblock %}
 
 {% block content %}
@@ -12,22 +12,32 @@ xanduria
         <div class="box">
             {% comment %} <multimedia src="multimedia/1.png" alt="reunion"> {% endcomment %}
              <img src="{% static 'img/1.png' %} ">
-        </div class = "parrafo">
-         <h1>Xanduria</h1><p>
+
+            </div>
+            <div class="parrafo">
+             <h1>Xanduria</h1><p>
+        
             <p>
             Había una vez en un reino lejano, un joven llamado Xander que se enamoró perdidamente de una hermosa chica
             llamada Mara. Ambos compartían una conexión especial y sus corazones estaban entrelazados en un amor puro y
             sincero.
+            <p> 
+                
+            </p>
         </p>
         <p>Sin embargo, el destino les tenía preparada una prueba difícil de superar. El mago Inferno de la familia de
             Mara, un hombre envidioso y egoísta, estaba decidido a separar a los amantes y hacer que Mara se casara con
             un príncipe de un reino vecino.</p>
-        
+        </div>
         <!-- Asegúrate de agregar 'controls' al reproductor de video -->
         <h1>Trailer del videojuego</h1>
         <div class="box2">
             {% comment %} <video src="multimedia/trailer.webm" autoplay type="multimedia/video/webm" controls></video> {% endcomment %}
-            <video src="{% static "img/trailer.webm" %}">
+            <video controls>
+                <source src="{% static 'img/trailer.webm' %}" type="video/webm">
+                Tu navegador no soporta el elemento de video.
+            </video>
+    
             <!-- Agregado: 'controls' -->
         </div>
     </header>

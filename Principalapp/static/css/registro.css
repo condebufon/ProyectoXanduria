@@ -1,0 +1,230 @@
+/* Reset y estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background-color: #361843;
+    /* Fondo principal */
+}
+
+/* Contenedor principal */
+.box {
+    width: 30%; /* Ancho del contenedor */
+    height: 250px; /* Altura del contenedor */
+    margin: 30%; /* Centra el contenedor horizontalmente */
+    margin-top: 50px; /* Espacio superior */
+    border-radius: 50%; /* Bordes redondeados (forma circular) */
+    box-shadow: -10px 10px 15px 10px #000; /* Sombra del contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+    background-size: contain; /* Ajusta la imagen de fondo dentro del contenedor */
+    background-repeat: no-repeat; /* No repite la imagen de fondo */
+    overflow: hidden; /* Oculta el contenido que exceda el contenedor */
+    background-image: url('ruta/a/tu/imagen.jpg'); /* Reemplaza con la ruta de tu imagen */
+    display: flex; /* Permite centrar el contenido interno */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    color: white; /* Color del texto (opcional) */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+}
+
+/* Imagen dentro de .box */
+img {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    filter: drop-shadow(10px 9px 5px #041a99);
+
+}
+
+/* Encabezado */
+header {
+    /*background-color: rgba(53, 31, 111, 0.6);*/
+    padding: 5% 0;
+    text-align: center;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+    border-bottom: 3px solid #000000;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+
+
+}
+
+li {
+    margin: 0;
+
+    text-align: center;
+    padding: 5px;
+    font-family: fantasy;
+    text-shadow: 10px 10px 5px rgb(0 0 0);
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+/*letra del menu de navegacion*/
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+nav ul li:hover ul {
+    display: block;
+
+}
+
+/* marco entre submenus*/
+nav ul li ul li {
+    display: block;
+    width: 10%;
+    margin: 0;
+}
+
+/* seleccion marco de seleccion entre submenus*/
+nav ul li ul li a {
+    padding: 5px 20px;
+    border-radius: 0;
+}
+
+nav ul li a:hover {
+    background-color: #a79292;
+}
+
+
+/* Pie de página */
+footer {
+    background-color: #5e2477;
+    text-align: center;
+}
+
+footer img {
+    background-color: #5e2477;
+    width: 5%;
+    margin: auto;
+    filter: drop-shadow(10px 0px 5px #d17dae);
+    border-style: double;
+    border-radius: 50%;
+}
+
+/* Información adicional */
+.info {
+
+    margin: auto;
+    padding: 20px 20px;
+    width: 300px;
+}
+
+fieldset {
+    margin-top: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+legend {
+    padding: 0 6px;
+    text-align: center;
+}
+
+/* Enlaces */
+a {
+    color: #f5161f;
+    text-decoration: none;
+}
+
+/* Estilos para etiquetas */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Ajustes para campos de entrada */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilos para el botón de envío */
+input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.login-with-google-btn {
+    /* Estilos generales del botón */
+    background-color: #dd4b39;
+    /* Color rojo de Google */
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-with-google-btn:hover {
+    background-color: #c53727;
+    /* Color rojo oscuro al pasar el ratón */
+}
+
+.login-with-google-btn:focus {
+    outline: none;
+    /* Quita el contorno al hacer clic */
+}

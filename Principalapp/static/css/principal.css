@@ -1,0 +1,154 @@
+/* Reset y estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background-color: #361843;
+    /* Fondo principal */
+}
+
+/* Contenedor principal */
+.box {
+    width: 390px;
+    height: 250px;
+    margin: 0 auto;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    border-radius: 50%;
+    box-shadow: -10px 10px 15px 10px #000;
+}
+
+/* Imágenes */
+img {
+    width: 100%;
+    margin: auto;
+    border-radius: 50%;
+    filter: drop-shadow(10px 0px 5px #041a99);
+}
+
+/* Encabezado */
+header {
+    /*background-color: rgba(53, 31, 111, 0.6);*/
+    padding: 10px 0;
+    text-align: center;
+}
+
+video {
+    width: 640px;
+    height: 360px;
+    margin: center;
+    border-radius: 50%;
+    filter: drop-shadow(10px 0px 5px #041a99);
+}
+
+
+/* Menú de navegación */
+nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+    border-bottom: 3px solid #000000;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+
+
+}
+
+li {
+    margin: 0;
+
+    text-align: center;
+    padding: 5px;
+    font-family: fantasy;
+    text-shadow: 10px 10px 5px rgb(0 0 0);
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+/*letra del menu de navegacion*/
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+nav ul li:hover ul {
+    display: block;
+
+}
+
+/* marco entre submenus*/
+nav ul li ul li {
+    display: block;
+    width: 10%;
+    margin: 0;
+}
+
+/* seleccion marco de seleccion entre submenus*/
+nav ul li ul li a {
+    padding: 5px 20px;
+    border-radius: 0;
+}
+
+nav ul li a:hover {
+    background-color: #a79292;
+}
+
+/* Pie de página */
+footer {
+    background-color: #5e2477;
+    text-align: center;
+}
+
+footer img {
+    background-color: #5e2477;
+    width: 5%;
+    margin: auto;
+    filter: drop-shadow(10px 0px 5px #d17dae);
+    border-style: double;
+}
+
+.parrafo {
+    width: 60%; /* Ancho del recuadro */
+    padding: 20px; /* Espaciado interno */
+    margin: 0 auto; /* Centra el recuadro horizontalmente */
+    
+    
+    text-align: justify; /* Centra el texto dentro del recuadro */
+}
+
+p {
+    margin: 0; /* Elimina el margen del párrafo */
+}

@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+    
+{% block title %}
+    ✉ Contactenos ✉
+{% endblock %}
+
+{% block content %}
+
+    <!-- Contenido de la Página -->
+    <header>
+        <div class="box">
+            <img src="{% static '/img/comentario.png' %} " alt="padre">
+        </div>
+    </header>
+
+    <div class="info">
+        <form action="base de datos contacto" name="informacion contacto" method="get">
+            <fieldset>
+                <legend>Informacion Basica</legend>
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Apellido">
+                <input type="number" placeholder="Edad">
+            </fieldset>
+            <fieldset>
+                <legend>Informacion de contacto</legend>
+                <input type="email" placeholder="Email">
+                <input type="number" placeholder="Numero">
+
+            </fieldset>
+            <fieldset>
+                <legend>Comentarios</legend>
+                <textarea placeholder="Escribe tus comentarios aquí" rows="4" cols="50"></textarea>
+            </fieldset>
+            <a href="multimedia/Aviso sobre el manejo de la información.pdf" target="_blank ">Acepta las
+                politicas de informacion</a> <input type="radio">
+            </a><br><br>
+        </form>
+
+        <input type="submit" value="Enviar">
+
+    </div>
+
+    {% endblock %}
+    

@@ -1,0 +1,189 @@
+/* Reset y estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background-color: #361843;
+    /* Fondo principal */
+}
+
+/* Contenedor principal */
+.box {
+    width: 30%;
+    height: 250px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 50%;
+    box-shadow: -10px 10px 15px 10px #000;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    /* Esto evita que el contenido se salga de las dimensiones de la caja */
+
+}
+
+/* Imagen dentro de .box */
+img {
+    width: 50%;
+    margin: auto;
+    height: 100%;
+    filter: drop-shadow(10px 9px 5px #041a99);
+
+}
+
+/* Encabezado */
+header {
+    /*background-color: rgba(53, 31, 111, 0.6);*/
+    padding: 5% 0;
+    text-align: center;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+    border-bottom: 3px solid #000000;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+
+
+}
+
+li {
+    margin: 0;
+
+    text-align: center;
+    padding: 5px;
+    font-family: fantasy;
+    text-shadow: 10px 10px 5px rgb(0 0 0);
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+/*letra del menu de navegacion*/
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+nav ul li:hover ul {
+    display: block;
+
+}
+
+/* marco entre submenus*/
+nav ul li ul li {
+    display: block;
+    width: 10%;
+    margin: 0;
+}
+
+/* seleccion marco de seleccion entre submenus*/
+nav ul li ul li a {
+    padding: 5px 20px;
+    border-radius: 0;
+}
+
+nav ul li a:hover {
+    background-color: #a79292;
+}
+
+
+/* Pie de página */
+footer {
+    background-color: #5e2477;
+    text-align: center;
+}
+
+footer img {
+    background-color: #5e2477;
+    width: 5%;
+    margin: auto;
+    filter: drop-shadow(10px 0px 5px #d17dae);
+    border-style: double;
+    border-radius: 50%;
+}
+
+/* Información adicional */
+.info {
+
+    margin: auto;
+    padding: 20px 20px;
+    width: 300px;
+}
+
+fieldset {
+    margin-top: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+legend {
+    padding: 0 6px;
+    text-align: center;
+}
+
+/* Enlaces */
+a {
+    color: #f5161f;
+    text-decoration: none;
+}
+
+/*edicion del texto*/
+input {
+    height: 19px;
+    width: 244px;
+}
+
+input[type="submit" i] {
+    height: 19px;
+    width: 92px;
+}
+
+input[type="radio" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 0px 5px;
+    padding: initial;
+    border: initial;
+}
+
+input[type="radio" i] {
+    width: auto;
+}
