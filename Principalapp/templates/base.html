@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+
+         {% endblock %}
+    </title>
+    {% load static %}
+    <link href="{% static 'css/principal.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Menú de Navegación -->
+    <nav>
+        <ul>
+            <li><a href=''>Inicio</a></li>
+            <li>
+                <a href="#">Comunidad</a>
+                <ul>
+                    <li><a href="contactenos.html">Contactenos</a></li>
+                    <li><a href="#">Eventos</a></li>
+                    <li><a href="#">Descarga</a></li>
+                </ul>
+            </li>
+            <li><a href="#">login</a>
+                <ul>
+                    <li><a href="registro.html">registro</a></li>
+                    <li><a href="#">login</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    {% block content %}
+    
+    {% endblock %}
+</body>
+
+<footer>
+    <div class="box2">
+        <!-- Pie de página -->
+        <a href="https://www.instagram.com/" target="_blank">
+            <multimedia src="multimedia/redes/instagram.jpg">
+        </a>
+        <a href="https://www.facebook.com/?locale=es_LA" target="_blank">
+            <multimedia src="multimedia/redes/facebook.jpg">
+        </a>
+        <a href="https://www.youtube.com/?hl=es" target="_blank">
+            <multimedia src="multimedia/redes/youtube.jpg">
+        </a>
+        <a href="https://wa.me/573058311157" target="_blank">
+            <multimedia src="multimedia/redes/whasaap.jpg"> <!-- Corregido: "whasaap.jpg" a "whatsapp.jpg" -->
+        </a>
+
+        <p>Derechos de autor © 2024 Mi Página de Juegos. Todos los derechos reservados.</p>
+    </div>
+</footer>
+</body>
+
+</html>
+
+
+
