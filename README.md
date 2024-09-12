@@ -1,6 +1,7 @@
 <h1 align="center">Proyecto Web</h1>
-<p align="justify">
+<p align="center">
   <a href="" rel="noopener">
+    <p align="justify">
  <img width=300px height=200px src=Principalapp/static/img/1.png
 </p>
 
