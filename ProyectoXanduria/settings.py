@@ -38,10 +38,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
      #my_App
+    'rest_framework',
+    'crispy_bootstrap4',
+    'crispy_forms',
     'Principalapp',
     'Contactenos',
-    'registro',
     'user',
+    'tienda',
+    'autenticacion',
+    'carro',
 ]
 
 MIDDLEWARE = [
@@ -90,18 +95,18 @@ DATABASES = {
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
-    {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
-    },
+    # {
+    #     'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+    # },
+    # {
+    #     'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+    # },
+    # {
+    #     'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+    # },
+    # {
+    #     'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+    # },
 ]
 
 
@@ -120,14 +125,27 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
+import os
+# Configuración de archivos estáticos y de medios
 STATIC_URL = '/static/'
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_URL = '/media/'  # URL base para acceder a los archivos de medios
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Ruta del sistema de archivos donde se almacenan los archivos subidos
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'  # Establece el tipo de campo automático por defecto para las claves primarias como BigAutoField
 
-# #override_user
-AUTH_USER_MODEL = "user.User"
+# #override_user  
+
+AUTH_USER_MODEL = "user.User"  # Especifica que se utilizará el modelo de usuario personalizado definido en la aplicación 'user'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# envios de emails
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'#Definir el Backend de Correo
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'soportesgamer@gmail.com'  # Reemplaza con tu correo
+EMAIL_HOST_PASSWORD = 'Fuerza20.'      # Reemplaza con tu contraseña

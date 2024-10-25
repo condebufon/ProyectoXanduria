@@ -7,22 +7,22 @@
 
 {% block content %}
 
+    <link rel="stylesheet" type="text/css" href="{% static 'css/principal.css' %}">
+
     <!-- Contenido de la Página -->
     <header>
-        <div class="img2">
+        <div class="box">
             {% comment %} <multimedia src="multimedia/1.png" alt="reunion"> {% endcomment %}
              <img src="{% static 'img/1.png' %} ">
 
             </div>
             <div class="parrafo">
              <h1>Xanduria</h1><p>
-        
-            <p>
-            Había una vez en un reino lejano, un joven llamado Xander que se enamoró perdidamente de una hermosa chica
-            llamada Mara. Ambos compartían una conexión especial y sus corazones estaban entrelazados en un amor puro y
-            sincero.
+             <p>
+                Había una vez en un reino lejano, un joven llamado Xander que se enamoró perdidamente de una hermosa chica
+                llamada Mara. Ambos compartían una conexión especial y sus corazones estaban entrelazados en un amor puro y
+                sincero.
             <p> 
-                
             </p>
         </p>
         <p>Sin embargo, el destino les tenía preparada una prueba difícil de superar. El mago Inferno de la familia de
@@ -41,6 +41,18 @@
             <!-- Agregado: 'controls' -->
         </div>
     </header>
+{% comment %} <!--_____________________________________-->
+    {%if user.is_authenticated ==admin %}
+        <P>usuario autenticado como {{user.username}}!</p>
+    {%else%}
+        <p>usuario no autenticado</p>
+    {% endif %}
+<!--_________________________________________--> {% endcomment %}
+    {%if user.grupo == "jefe" %}
+        <p>bienvenidos al grupo jefe</p>
+    {%else%}
+        <p>grupo no autenticado</p>
+    {% endif %}
 
     {% endblock %}
 

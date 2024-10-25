@@ -7,6 +7,10 @@
 
 {% block content %}
 
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/contactenos.css' %}">
+</head>
+
     <!-- Contenido de la Página -->
     <header>
         <div class="box">
@@ -14,27 +18,32 @@
         </div>
     </header>
 
-    <div class="info">
-        <form action="base de datos contacto" name="informacion contacto" method="get">
+    <div class="contact-form-container">
+        <h2> contactenos</h2>
+        <form action="/contactenos/" name="informacion contacto" method="POST">{% csrf_token %}
             <fieldset>
                 <legend>Informacion Basica</legend>
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Apellido">
-                <input type="number" placeholder="Edad">
+                <label for "nombre">nombre: </label>
+                <input type="text" id="nombre" name= "nombre" placeholder="Nombre" requerid>     
+                <label for "edad">edad: </label>
+                <input type="number" id="numero" name= "edad" placeholder="Edad" requerid>
             </fieldset>
             <fieldset>
                 <legend>Informacion de contacto</legend>
-                <input type="email" placeholder="Email">
-                <input type="number" placeholder="Numero">
+                <label for "email">email: </label>
+                <input type="email" id="email" name= "email" placeholder="email" requerid>
+                
+            <legend>Comentarios</legend>
+            <label for "subject">asunto: </label>
+            <input type="text" id="subject" name= "subject" placeholder="asunto del mensaje" requerid>
 
-            </fieldset>
-            <fieldset>
-                <legend>Comentarios</legend>
-                <textarea placeholder="Escribe tus comentarios aquí" rows="4" cols="50"></textarea>
-            </fieldset>
+            <label for "mensaje">mensaje: </label>
+            <textarea class="mjs" type="mensaje" id="mensaje" name= "mensaje" rows= "5" placeholder="Escribe tus comentarios aquí" requerid></textarea>
+               
+            {% comment %} </fieldset>
             <a href="multimedia/Aviso sobre el manejo de la información.pdf" target="_blank ">Acepta las
                 politicas de informacion</a> <input type="radio">
-            </a><br><br>
+            </a><br><br> {% endcomment %}
         </form>
 
         <input type="submit" value="Enviar">

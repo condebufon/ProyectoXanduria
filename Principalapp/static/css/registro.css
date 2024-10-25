@@ -30,11 +30,11 @@ body {
     text-align: center; /* Alinea el texto al centro */
 }
 
-}
-
 /* Imagen dentro de .box */
 img {
-    width: 100%;
+
+    width: 70%;
+    height: 80%;
     margin: auto;
     height: 100%;
     filter: drop-shadow(10px 9px 5px #041a99);

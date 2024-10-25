@@ -1,0 +1,164 @@
+/* Reset y estilos generales */
+body {
+    margin: auto;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    color: #c8c7df;
+    background: linear-gradient(180deg, #190b1f, #9370DB);
+    /* Fondo más claro */
+}
+
+/* Menú de navegación */
+nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+    border-bottom: 3px solid #000000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #e0d9d9;
+}
+
+.card-body,card shadow-sm {
+    background: linear-gradient(180deg, #70527c, #9370DB);
+}
+card shadow-sm {
+    background: linear-gradient(180deg, #70527c, #9370DB);
+    
+}
+.products{
+    text-align: center
+    /* Centra el contenido */
+    
+
+}
+.products:hover{
+    transform: scale(1.05)
+    
+}
+/* .card-body:hover{
+    transform: scale(1.05)
+} */
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Imagen de producto */
+.product img {
+    width: 150px;
+    /* Imagen más pequeña */
+    height: 150px;
+    border-radius: 30%;
+    /* Borde redondeado (circular) */
+
+    object-fit: cover;
+    /* Ajusta la imagen para cubrir el espacio */
+}
+
+/* Efecto al pasar el ratón */
+.product img:hover {
+    transform: scale(1.05)}
+
+/* Texto de descripción */
+.texto_p1 {
+    color: #ffffff;
+    /* Texto oscuro */
+    font-size: 14px;
+    /* Tamaño más pequeño */
+    font-weight: normal;
+    text-align: justify;
+    margin: 0;
+    /* Elimina márgenes para evitar desbordes */
+    max-height: 4.5em;
+    /* Altura ajustada para 3 líneas */
+    /* overflow-y: auto; Añade desplazamiento vertical si el texto es largo */
+    word-wrap: break-word;
+    /* Rompe las palabras largas */
+    padding: 5px;
+    /* Añade algo de espacio alrededor del texto */
+    line-height: 1.5em;
+    /* Ajusta el espacio entre líneas */
+    /*adiciones*/
+    grid-row: 2;
+    /* Coloca el texto en la segunda fila */
+}
+
+.texto_p1 textarea {
+    background-color: #9377d8;
+    width: 100%;
+    /* Ancho en píxeles */
+    height: 90px;
+    /* Alto en píxeles */
+
+}
+
+.contenedor {
+    margin-bottom: 40px;
+    /* Espacio adicional debajo del textarea */
+
+}
+
+.texto_p2 {
+    color: #f0efef;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: rgb(92, 11, 18);
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    /* Espacio entre cada  div */
+}
+
+/* Ocultar la barra de desplazamiento */
+.product-list::-webkit-scrollbar {
+    display: none;
+}
+
+.btn-group {
+    margin-bottom: 20px;
+    /* Espacio entre cada div */
+    color: blue !important;
+    background-color: #000000 !important;
+}
+
+.img_producto {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 20px;
+    /* Agrega un margen de 20px entre la imagen y el texto */
+    padding-bottom: 20px;
+    /* Agrega un padding de 20px entre la imagen y el texto */
+    grid-row: 1;
+    /*Coloca la imagen en la primera fila */
+}

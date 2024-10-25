@@ -1,7 +1,10 @@
-from django.db import models
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser  # Importa la clase AbstractUser para crear un modelo de usuario personalizado
+from django.db import models  # Importa el módulo models para definir modelos de base de datos
 
-# Create your models here.
+class Grupo(models.Model):
+    pass
 
-class User(AbstractUser): #para colocar propiedades al usuario nuevas
-    rh = models.CharField(blank=True, default ='pendiente', max_length=5, null=True) #default =pendiente 
+class User(AbstractUser):  # Define un modelo de usuario personalizado que hereda de AbstractUser
+    rh = models.CharField(blank=True, default="Pendiente", null=True, max_length=50)  # Campo para el grupo sanguíneo, permite valores en blanco y nulos, con un valor por defecto "Pendiente"
+    
+    # pass

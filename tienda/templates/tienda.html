@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}
+Tienda
+{% endblock %}
+
+
+{% block content %}
+<main>
+    <div class="organiza" style="display: flex;">
+        <div class="album py-5 bg-body-tertiary" style="display: flex; width: 85%;background: linear-gradient(180deg, #190b1f, #9370DB);">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                {% for productos in products %}
+                <div class="products">
+                    <div class="card shadow-sm">
+                        <div>
+                            <h7 class="product"><b>{{productos.nombre}}</b> </h7>
+                            <!-- <small class="text-body-secondary">{{value.contenido}}</small> -->
+                        </div>
+                        <img class="img_producto" width="350" height="250" src="{{productos.imagen.url}}">
+                        <!-- 500x500-->
+                        <div class="card-body">
+
+                            <p class="card-text">{{productos.contenido}}</p>
+                            {% for categoria in productos.categorys.all %}
+                            <p>{{categoria.nombre}}</p>
+                            {% endfor %}
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="{% url 'carro:agregar' productos.id %}"
+                                        class="btn btn-sm btn-outline-secondary">Comprar</a>
+                                </div>
+                                <small class="text-body-secondary">$ {{productos.precio}}</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <!-- Carro Compra -->
+
+        {% if request.user.is_authenticated %}
+        <div class="card" style="width: 15%;">
+            {% include "carro/widget.html" %}
+        </div>
+        {% else %}
+        Realiza login para ver el carro
+        {% endif %}
+
+    </div>
+
+</main>
+{% endblock %}

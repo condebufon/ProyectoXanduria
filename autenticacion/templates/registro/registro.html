@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+    Registro
+{% endblock %}
+
+{% block content %}
+<form method="post" action="">
+    {%csrf_token %}
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-lg-5 py-5">
+            <div class="col-lg-7 text-center text-lg-start">
+                <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Regístrate y empieza a ahorrar</h1>
+                <p class="col-lg-10 fs-4">¡Bienvenido a nuestra tienda! 🎉 Únete y desbloquea ofertas exclusivas, descuentos irresistibles y sorpresas increíbles. ¡Tu experiencia de compra transformadora comienza ahora! 🛍️✨</p>
+            </div>
+
+            <div class="col-md-10 mx-auto col-lg-5">
+                <div class="p-4 border rounded-3 bg-body-tertiary" style="width: 31rem; height: 23rem;">
+                    <div class="modal-content color-registro">
+                        <div style="margin: 0rem 0 0 0;">
+                            {{ form.as_p }}
+                        </div>
+                        <button type="submit" class="w-100 btn btn-lg btn-primary">Registrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>
+{% endblock %}
