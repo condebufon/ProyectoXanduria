@@ -1,9 +1,8 @@
 from django.shortcuts import render
-from tienda.models import Product
+from tienda.models import product
 
+# Create your views here.
 
-def tienda(request):  # Crear la vista llamada 'tienda'
-    products = Product.objects.all()  # Obtener todos los productos de la base de datos
-    return render(
-        request, "tienda.html", {"products": products}
-    )  # Renderizar la plantilla 'tienda.html' y pasar los productos como contexto
+def tienda(request):    
+    products=product.objects.all()
+    return render(request, "tienda.html", {"products":products})

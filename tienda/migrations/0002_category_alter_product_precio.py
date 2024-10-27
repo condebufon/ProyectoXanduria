@@ -25,7 +25,7 @@ class Migration(migrations.Migration):
             },
         ),
         migrations.AlterField(
-            model_name='product',
+            model_name='Product',
             name='precio',
             field=models.CharField(max_length=1000),
         ),

@@ -1,40 +1,42 @@
-from django.contrib import admin  # Importa el módulo admin para gestionar el panel de administración de Django
-from .models import Product, category  # Importa el modelo 'product' desde el archivo models.py de la misma aplicación
+from django.contrib import admin
+from .models import product, category
 
-# class ProductoAdmin(admin.ModelAdmin):  # Define una clase para personalizar la administración del modelo 'product'
-#     readonly_fields = ("created", "updated")  # Especifica que los campos 'created' y 'updated' son de solo lectura en el panel de administración
+# Register your models here.
 
-# admin.site.register(product, ProductoAdmin)  # Registra el modelo 'product' con su configuración personalizada en el panel de administración
-
-class categoryAdmin(admin.ModelAdmin):  # Define una clase para personalizar la administración del modelo 'product'
+class CategoryAdmin(admin.ModelAdmin):
     list_display=(
         "id",
         "nombre",
         "imagenCategoria",
         "created",
     )
-    # readonly_fields = ("created", "updated")  # Especifica que los campos 'created' y 'updated' son de solo lectura en el panel de administración
-    search_fields=("nombre", "created")#campo de busqueda
-    list_filter=("created",)# filtro
-    date_hierarchy="created"# visualizador del filtro
+    # readonly_fields=("created","updated")
+    search_fields=("nombre","created") #campo de busqueda
+    list_filter=("created",) #Filtrar
+    date_hierarchy="created" #visualizacion del filtro
 
-class productAdmin(admin.ModelAdmin):
+class ProductoAdmin(admin.ModelAdmin):
     list_display=(
+        "id",
         "nombre",
         "imagen",
         "contenido",
-        "precio",   
+        # "categorys",
+        "mostrar_categorias",
+        "precio",
         "disponibilidad",
         "created",
-        "updated",
     )
-    search_fields=("nombre", "contenido","precio","created","updated")#campo de busqueda
-    list_filter=("created",)# filtro
-    date_hierarchy="created"# visualizador del filtro
+    def mostrar_categorias(self, obj):
+        return ", ".join([category.nombre for category in obj.categorys.all()])
 
-admin.site.register(Product, productAdmin)  # Registra el modelo 'product' con su configuración personalizada en el panel de administración
-admin.site.register(category, categoryAdmin)# Registra el modelo 'category' con su configuración personalizada en el panel de administración
+    mostrar_categorias.short_description = 'Categorías'
+    # readonly_fields=("created","updated")
+    
+    search_fields=("nombre", "contenido", "precio","created") #campo de busqueda
+    list_filter=("created",) #Filtrar
+    date_hierarchy="created" #visualizacion del filtro
 
 
-
-        
+admin.site.register(product, ProductoAdmin)
+admin.site.register(category, CategoryAdmin)

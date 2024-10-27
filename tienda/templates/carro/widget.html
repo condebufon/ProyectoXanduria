@@ -1,36 +1,43 @@
 <div class="col-md-5 col-lg-4 order-md-last" style="width: 100%;">
     <h4 class="d-flex justify-content-between align-items-center mb-3">
-        <span class="text-primary">Carro de compras</span>
-        <!-- <span class="badge bg-primary rounded-pill">3</span> -->
+      <span class="text-primary">Carro de compras</span>
+      <!-- <span class="badge bg-primary rounded-pill">3</span> -->
     </h4>
-    <ul class="list-group mb-3">
+    <ul class="list-group mb-3" >
         {% if request.session.carro.items %}
-        {% for key, value in request.session.carro.items %}
-        <li class="list-group-item d-flex justify-content-between lh-sm"
-            style="display: flex !important;flex-direction: column; padding: 2px;">
-            <div style="display: flex; justify-content: space-between">
-                <div>
-                    <h6><class="my-0">{{value.nombre}}</h6>
-
-
-                    <!-- <small class="text-body-secondary">{{value.contenido}}</small> -->
-                </div>
-                <span class="text-body-secondary">$ {{value.precio}}</span>
-            </div>
-            <div class="div-button-car">
-                <a class="btn btn-sm btn-success" href="{% url 'carro:agregar' value.producto_id %}">+</a>
-                <a>{{value.cantidad}}</a>
-                <a class="btn btn-sm btn-success" href="{% url 'carro:restar' value.producto_id %}">-</a>
-            </div>
-        </li>
-        <img src="{{productos.imagen}}" alt="Img product" width="10%" height="20%">
-        {% endfor %}
+            {% for key, value in request.session.carro.items %}
+                <li class="list-group-item d-flex justify-content-between lh-sm" style="display: flex !important;flex-direction: column; padding: 2px;">
+                    <div style="display: flex; justify-content: space-between">
+                        <div>
+                            <h6 class="my-0">{{value.nombre}}</h6>
+                            {% comment %} <small class="text-body-secondary">{{value.contenido}}</small> {% endcomment %}
+                        </div>
+                        <span class="text-body-secondary">$ {{value.precio}}</span>
+                    </div>                    
+                    <div class="div-button-car">
+                        <a class="btn btn-sm btn-success" href="{% url 'carro:agregar' value.producto_id %}">+</a>
+                        <a>{{value.cantidad}}</a>
+                        <a class="btn btn-sm btn-success" href="{% url 'carro:restar' value.producto_id %}">-</a>    
+                    </div>
+                </li>
+                {% comment %} <img src="{{productos.imagen.url}}"> {% endcomment %}
+                <img src="{{productos.imagen.url}}">
+                
+            {% endfor %}
         {% else %}
-        <div>No hay proyductos</div>
+            <div>No hay productos</div>
         {% endif %}
         <li class="list-group-item d-flex justify-content-between" style="display: flex !important; padding: 2px;">
             <span>Total</span>
-            <strong>$ {{ total }}</strong> <!-- Mostrar el total aquí -->
+            <strong>$ {{importe_total_carro}}</strong>
         </li>
+        {% comment %} {% if request.session.carro.items %}
+            <tr><td colspan="3">
+
+                <!-- <a href="#" class="btn btn-success">Hacer Pedido</a> -->
+                <a href="/pedidos" class="btn btn-success">Hacer Pedido</a>
+
+            </td></tr>
+        {% endif %} {% endcomment %}
     </ul>
-</div>
+  </div>

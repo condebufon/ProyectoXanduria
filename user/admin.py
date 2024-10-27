@@ -8,12 +8,13 @@ from user.models import User  # Importa el modelo 'User' desde el archivo models
 class UserAdmin(UserAdmin):  # Define una clase personalizada para la administración del modelo 'User', heredando de UserAdmin
     fieldsets = (  # Define los grupos de campos que se mostrarán en el formulario de edición del usuario
         (None, {"fields": ('username', 'password'),}),  # Grupo sin título con campos 'username' y 'password'
-        ('Informacion Personal', {"fields": ('first_name', 'last_name', 'email', 'rh'),}),  # Grupo con información personal 
-    #     ('Permissions', {"fields": ('is_active', 'is_staff','is_superuser','groups','user_permissions'),}),
+        #('Informacion Personal', {"fields": ('first_name', 'last_name', 'email'),}),  # Grupo con información personal 
+        ('Permissions', {"fields": ('is_active', 'is_staff','is_superuser','groups','user_permissions'),}),
     )
     list_display = [
                     'id',
                     'username',
                     'email',
+                    'grupo',
                  ]
     # pass # Indica que no hay más código en esta clase (puede ser eliminado si no se necesita)

@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'tienda',
     'autenticacion',
     'carro',
+    'pedidos',
 ]
 
 MIDDLEWARE = [
@@ -143,9 +144,9 @@ AUTH_USER_MODEL = "user.User"  # Especifica que se utilizará el modelo de usuar
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # envios de emails
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'#Definir el Backend de Correo
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'soportesgamer@gmail.com'  # Reemplaza con tu correo
-EMAIL_HOST_PASSWORD = 'Fuerza20.'      # Reemplaza con tu contraseña
+EMAIL_HOST_USER = 'soportesgamer@gmail.com'
+EMAIL_HOST_PASSWORD = 'Fuerza20.'
