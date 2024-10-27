@@ -9,7 +9,7 @@ class UserAdmin(UserAdmin):  # Define una clase personalizada para la administra
     fieldsets = (  # Define los grupos de campos que se mostrarán en el formulario de edición del usuario
         (None, {"fields": ('username', 'password'),}),  # Grupo sin título con campos 'username' y 'password'
         #('Informacion Personal', {"fields": ('first_name', 'last_name', 'email'),}),  # Grupo con información personal 
-        ('Permissions', {"fields": ('is_active', 'is_staff','is_superuser','groups','user_permissions'),}),
+        ('Permissions', {"fields": ('is_active', 'is_staff','is_superuser','grupo','user_permissions'),}),
     )
     list_display = [
                     'id',

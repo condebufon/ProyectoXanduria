@@ -31,13 +31,13 @@
             <span>Total</span>
             <strong>$ {{importe_total_carro}}</strong>
         </li>
-        {% comment %} {% if request.session.carro.items %}
+        {% if request.session.carro.items %}
             <tr><td colspan="3">
 
                 <!-- <a href="#" class="btn btn-success">Hacer Pedido</a> -->
                 <a href="/pedidos" class="btn btn-success">Hacer Pedido</a>
 
             </td></tr>
-        {% endif %} {% endcomment %}
+        {% endif %} 
     </ul>
   </div>

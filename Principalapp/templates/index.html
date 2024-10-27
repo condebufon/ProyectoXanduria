@@ -41,18 +41,6 @@
             <!-- Agregado: 'controls' -->
         </div>
     </header>
-{% comment %} <!--_____________________________________-->
-    {%if user.is_authenticated ==admin %}
-        <P>usuario autenticado como {{user.username}}!</p>
-    {%else%}
-        <p>usuario no autenticado</p>
-    {% endif %}
-<!--_________________________________________--> {% endcomment %}
-    {%if user.grupo == "jefe" %}
-        <p>bienvenidos al grupo jefe</p>
-    {%else%}
-        <p>grupo no autenticado</p>
-    {% endif %}
 
     {% endblock %}
 

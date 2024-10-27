@@ -37,9 +37,18 @@
                         href="{% url 'tienda' %}">Tienda</a></li> <!-- Enlace a la tienda -->
                 <li><div>
                         {% if user.is_authenticated %}
-
+                        {% if user.grupo == 'Admin' %}
+                        <p>¡ Bienvenido jefe&nbsp; &nbsp;{{user.username}} ! &nbsp; &nbsp; <a href="{% url 'cerrar_sesion' %}"> Cerrar
+                            sesion</a></p>
+                    {% else %}
+                        <p>¡ Bienvenido Invitado&nbsp; &nbsp;{{user.username}} ! &nbsp; &nbsp; <a href="{% url 'cerrar_sesion' %}"> Cerrar
+                            sesion</a></p>
+                    {% endif %}
+{% comment %} 
                         &nbsp; &nbsp;{{user.username}} &nbsp; &nbsp; <a href="{% url 'cerrar_sesion' %}"> Cerrar
-                            sesion</a>
+                            sesion</a> {% endcomment %}
+
+                           
 
                         {% else %}
 
@@ -47,6 +56,8 @@
                         <a class="word-register" href="{% url 'Autenticacion' %}"> Registrar </a> &nbsp; &nbsp;
 
                         {% endif %}
+
+                        
                     </div></li>
             </ul>
         </div>

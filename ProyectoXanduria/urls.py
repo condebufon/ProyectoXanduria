@@ -26,4 +26,5 @@ urlpatterns = [  # Lista que contiene todas las rutas del proyecto
     path('carro', include('carro.urls')),
     path('autenticacion/', include('autenticacion.urls')),
     path('pedidos/',include('pedidos.urls')),
+    
 ]

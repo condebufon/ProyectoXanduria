@@ -31,7 +31,7 @@ def contacto(request):
         subject = request.POST.get("subject")
         mensaje = request.POST.get("mensaje")
         from_email = settings.EMAIL_HOST_USER
-        recipient_list = ["soportesgamer@gmail.com"]
+        recipient_list = ["xanduria@outlook.com"]
 
         # Envío del correo
         try:

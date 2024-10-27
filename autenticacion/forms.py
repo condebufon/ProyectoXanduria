@@ -7,10 +7,11 @@ User = get_user_model()
 class UserRegistrationForm(forms.ModelForm): #Un ModelForm automáticamente maneja los campos del modelo que especifiques, en lugar de tener que definirlos manualmente.
     password = forms.CharField(widget=forms.PasswordInput)
     password_confirmation = forms.CharField(widget=forms.PasswordInput)
+    email = forms.EmailField()  # Campo de email visible
 
     class Meta: # define los metadatos del formulario
         model = User    #  especifica que el formulario está basado en el modelo User
-        fields = ['username', 'password', 'password_confirmation']
+        fields = ['username','email', 'password', 'password_confirmation']
 
     def clean(self):
         cleaned_data = super().clean()  # Contiene todos los datos del formulario que han sido limpiados (validos).

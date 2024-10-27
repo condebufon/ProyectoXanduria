@@ -55,10 +55,9 @@ def enviar_mail(**kwargs):
                        
         })
 
-    mensaje_texto=strip_tags(mensaje)
-    from_email="xanduria@outlook.com" # Aquien va dirigido el correo
-    to=kwargs.get("email_usuario") # Email Usuario
-    to="email_usuario"
-
-    send_mail(asunto,mensaje_texto,from_email,[to], html_message=mensaje)
+    # mensaje_texto=strip_tags(mensaje)
+    # from_email="xanduria@outlook.com" # Aquien va dirigido el correo
+    # to=kwargs.get("email_usuario") # Email Usuario
+    # to="email_usuario"
+    # send_mail(asunto,mensaje_texto,from_email,[to], html_message=mensaje)
     
