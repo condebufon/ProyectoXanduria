@@ -11,9 +11,9 @@
 #         email =request.POST["email"]
 #         subject=request.POST["subject"] 
 #         mensaje=request.POST["mensaje"] 
-#         from_email= settings.EMAIL_HOST_USER
-#         recipient_list=["soportesgamer@gmail.com"]#Lista con las direcciones de los destinatarios.
-#         send_mail(subject,mensaje,from_email,recipient_list) #Lista con las direcciones de los destinatarios.
+#         from_email= 'xanduria@outlook.com'
+#         recipient_list=["xanduria@outlook.com"]#Lista con las direcciones de los destinatarios.
+#         send_mail(subject, mensaje, from_email, recipient_list) #Lista con las direcciones de los destinatarios.
         
 #     return render(request, "contactenos.html")
 
