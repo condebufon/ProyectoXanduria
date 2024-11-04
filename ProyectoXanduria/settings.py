@@ -73,6 +73,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'carro.context_processors.importe_total_carro', #Registrar la variable de  contex_procesor
             ],
         },
     },
@@ -114,7 +115,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-co'
 
 TIME_ZONE = 'UTC'
 
@@ -137,7 +138,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Ruta del sistema de archivos don
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'  # Establece el tipo de campo automático por defecto para las claves primarias como BigAutoField
 
-# #override_user  
+#override_user  
 
 AUTH_USER_MODEL = "user.User"  # Especifica que se utilizará el modelo de usuario personalizado definido en la aplicación 'user'
 
