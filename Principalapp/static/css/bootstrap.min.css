@@ -9457,8 +9457,9 @@ fieldset:disabled .btn {
 }
 
 .text-primary {
+    background-color: #4f2561;
     --bs-text-opacity: 1;
-    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important
+    color:rgba(0, 0, 0, 0.5) !important
 }
 
 .text-secondary {

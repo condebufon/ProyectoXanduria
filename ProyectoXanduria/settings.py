@@ -146,10 +146,10 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # envios de emails
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp-mail.outlook.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'xanduria@outlook.com'  # Tu correo de Outlook
-EMAIL_HOST_PASSWORD = 'mfdrljlblkmzcogq'     # La contraseña de tu cuenta de Outlook
-DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+EMAIL_HOST = 'smtp.office365.com'  # Servidor SMTP de Outlook
+EMAIL_PORT = 587  # Puerto para TLS
+EMAIL_USE_TLS = True # Usar TLS
+EMAIL_HOST_USER = os.environ.get('xanduria@outlook.com')  # Tu correo de Outlook
+EMAIL_HOST_PASSWORD = os.environ.get('mfdrljlblkmzcogq')     # La contraseña de tu cuenta de Outlook
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER # Dirección de envío por defecto
 

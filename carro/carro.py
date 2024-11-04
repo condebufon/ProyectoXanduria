@@ -15,8 +15,10 @@ class Carro:
                 "nombre" : producto.nombre,
                 "contenido" : producto.contenido,
                 "precio" : str(producto.precio),
-                "cantidad" : 1,
                 "imagen" : producto.imagen.url,
+                "cantidad" : 1,
+                
+                #imagen" : producto.imagen.url,
                 }
         else:
             for key, value in self.carro.items(): #Se recorre el diccionario self.carro para buscar el producto cuyo ID coincide

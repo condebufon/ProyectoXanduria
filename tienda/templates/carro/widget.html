@@ -10,6 +10,7 @@
                     <div style="display: flex; justify-content: space-between">
                         <div>
                             <h6 class="my-0">{{value.nombre}}</h6>
+                            
                             {% comment %} <small class="text-body-secondary">{{value.contenido}}</small> {% endcomment %}
                         </div>
                         <span class="text-body-secondary">$ {{value.precio}}</span>
@@ -20,8 +21,7 @@
                         <a class="btn btn-sm btn-success" href="{% url 'carro:restar' value.producto_id %}">-</a>    
                     </div>
                 </li>
-                {% comment %} <img src="{{productos.imagen.url}}"> {% endcomment %}
-                <img src="{{productos.imagen.url}}">
+                  
                 
             {% endfor %}
         {% else %}

@@ -111,7 +111,7 @@ li {
    /* Centra el texto dentro de los elementos de la lista*/
    padding: 5px;
    /* Espaciado interno para los elementos de la lista*/
-   font-family: fantasy;
+   font-family: 'Times New Roman', Times, serif;
    /* Tipo de fuente para los elementos de la lista*/
    /* text-shadow: 10px 10px 5px rgb(0, 0, 0); Sombra en el texto para mayor legibilidad y efecto visual */
 }
@@ -146,7 +146,7 @@ nav ul li ul {
    /* Fondo semi-transparente para los submenús*/
    padding: 0;
    border-radius: 0 0 5px 5px;
-   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+   /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
    /* Sombra en los submenús para dar profundidad visual*/
    z-index: 1;
 }

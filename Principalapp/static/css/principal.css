@@ -110,15 +110,13 @@ nav ul li {
 li {
     margin: 0;
     /* Elimina el margen por defecto en los elementos de la lista */
-
     text-align: center;
     /* Centra el texto dentro de los elementos de la lista */
     padding: 5px;
     /* Espaciado interno para los elementos de la lista */
-    font-family: fantasy;
+    font-family: 'Times New Roman', Times, serif;
     /* Tipo de fuente para los elementos de la lista */
-    /* text-shadow: 10px 10px 5px rgb(0, 0, 0); */
-    /* Sombra en el texto para mayor legibilidad y efecto visual*/
+    
 }
 
 nav {
