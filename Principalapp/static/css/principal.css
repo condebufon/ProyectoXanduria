@@ -12,7 +12,7 @@ body {
     /* Centra el fondo */
     color: #fff;
     /* Color del texto */
-    background: linear-gradient(180deg, #190b1f, #9370DB);
+    background: linear-gradient(180deg, #190b1f, #8855ec);
     /* Fondo con un degradado */
 }
 
@@ -185,7 +185,7 @@ nav ul li a:hover {
 
 /* Pie de página */
 footer {
-    background-color: #5e2477;
+    background-color: #8b35af;
     /* Color de fondo para el pie de página*/
     text-align: center;
     /* Centra el contenido dentro del pie de página*/
