@@ -207,9 +207,6 @@ h2{
    /* Espaciado interno dentro del contenedor (20px alrededor)*/
    width: auto;
    /* Ancho fijo para este contenedor (300 píxeles)*/
-}
-
-fieldset {
    margin-top: auto;
    /* Espacio superior antes del fieldset (20 píxeles)*/
    border: 1px solid #ffffff;
@@ -225,8 +222,26 @@ fieldset {
 
    text-align: justify;
    /* Justifica el texto dentro del recuadro*/
-
 }
+
+/* fieldset {
+   margin-top: auto;
+   /* Espacio superior antes del fieldset (20 píxeles)*/
+   /*border: 1px solid #ffffff;
+   /* Borde blanco alrededor del fieldset*/
+   /*border-radius: 5px;
+   /* Bordes redondeados en el fieldset*/
+   /*width: 80%;
+   /* Ancho del recuadro donde se coloca el párrafo*/
+   /*padding: 4%;
+   /* Espaciado interno dentro del recuadro*/
+   /*margin: 0 auto;
+   /* Centra horizontalmente el recuadro con márgenes automáticos*/
+
+   /* text-align: justify; */
+   /* Justifica el texto dentro del recuadro*/
+
+/* ] */
 
 legend {
    padding: 0 6px;

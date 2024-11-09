@@ -8,12 +8,12 @@ crear productos
 {% block content %}
 
 
-<h1>{% if form.instance.pk %}Actualizar{% else %}Crear{% endif %} Producto</h1>
-<form method="post"enctype="multipart/form-data">
+<div class="contact-form-container"> 
+    <h1>{% if form.instance.pk %}Actualizar{% else %}Crear{% endif %} Producto</h1>
+    <form method="post"enctype="multipart/form-data">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Guardar</button>
-    
-</form>
+    </form>
 </div>
 {% endblock %}

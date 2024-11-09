@@ -44,7 +44,7 @@
                             href="{% url 'crear_producto' %}">Crear producto</a></li> <!-- Enlace a la tienda -->
 
                     {% else %}
-                        <p>¡ Bienvenido Invitado&nbsp; &nbsp;{{user.username}} ! &nbsp; &nbsp; <a href="{% url 'cerrar_sesion' %}"> Cerrar
+                    <li><p>¡ Bienvenido Invitado&nbsp; &nbsp;{{user.username}} ! &nbsp; &nbsp; <a href="{% url 'cerrar_sesion' %}"> Cerrar
                             sesion</a></p>
                     {% endif %}
 {% comment %} 
