@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}
+actualizar productos
+{% endblock %}
+
+
+{% block content %}
+
+
+<h1>{% if form.instance.pk %}Actualizar{% else %}Crear{% endif %} Producto</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Guardar</button>
+</form>
+{% endblock %}

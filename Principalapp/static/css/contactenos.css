@@ -237,10 +237,11 @@ legend {
 
 /* Enlaces generales - Estilo básico para todos los enlaces en la página */
 a {
-   color: #000000;
+   color: #ffffff;
    /* Color negro para todos los enlaces*/
    text-decoration: none;
    /* Elimina subrayados en enlaces*/
+   font-family: 'Times New Roman', Times, serif;
 }
 
 /* Estilos para etiquetas - Mejora visual y accesibilidad */

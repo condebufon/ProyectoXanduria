@@ -17,7 +17,7 @@ class category(models.Model):
 
 class product(models.Model):
     nombre          =models.CharField(max_length=50)
-    imagen          =models.ImageField(upload_to='tienda', null=True, blank=True)
+    imagen          =models.ImageField(upload_to='media/tienda', null=True, blank=True)
     categorys       =models.ManyToManyField(category)
     contenido       =models.CharField(max_length=1000)    
     precio          =models.FloatField()

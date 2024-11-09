@@ -17,19 +17,25 @@ Tienda
                             <h7 class="product"><b>{{productos.nombre}}</b> </h7>
                             <small class="text-body-secondary">{{value.contenido}}</small>
                         </div>
-                        <img class="img_producto" width="350" height="250" src="{{productos.imagen.url}}">
                         
+                        <img class="img_producto" width="350" height="250" src="{{ productos.imagen.url}}" alt="Imagen del producto">                        
                         <div class="card-body">
 
                             <p class="card-text">{{productos.contenido}}</p>
                             {% for categoria in productos.categorys.all %}
                             <p>{{categoria.nombre}}</p>
                             {% endfor %}
-                            <div class="d-flex justify-content-between align-items-center">
+                            
+                                <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <a href="{% url 'carro:agregar' productos.id %}"
                                         class="btn btn-sm btn-outline-secondary">Comprar</a>
-                                </div>
+                                        {% if user.is_authenticated %}
+                                        {% if user.grupo == 'Admin' %}  
+                                        <a href="{% url 'actualizar_producto' productos.id %}"class="btn btn-sm btn-outline-secondary">Editar</a>
+                                        <a href="{% url 'eliminar_producto' productos.id %}"class="btn btn-sm btn-outline-secondary"x>Eliminar</a>
+                                        {% endif%}{% endif%}
+                                    </div>
                                 <small class="text-body-secondary">$ {{productos.precio}}</small>
                             </div>
                         </div>
