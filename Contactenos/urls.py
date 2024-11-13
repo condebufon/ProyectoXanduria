@@ -1,9 +1,8 @@
-from django.urls import path  # Importa la función path para definir rutas
-from . import views  # Importa el módulo views que contiene las funciones de vista
+from django.urls import path
+from .views import contact, message_list, message_detail
 
-urlpatterns = [  # Lista que contiene las rutas de la aplicación
-    path('', views.contacto, name="contactenos"),  # Ruta para acceder a la vista contacto
+urlpatterns = [
+    path('', contact, name='contact'),  # Ruta para el formulario de contacto
+    path('messages/', message_list, name='message_list'),  # Ruta para ver todos los mensajes
+    path('messages/<int:message_id>/', message_detail, name='message_detail'),  # Ruta para ver un mensaje específico
 ]
-
-
-

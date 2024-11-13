@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    ✉ Contáctenos ✉
+{% endblock %}
+
+{% block content %}
+<body>
+    <h1>Mensajes Recibidos</h1>
+    
+    <ul>
+        {% for message in messages %}
+            <li>
+                <a class="form-control" href="{% url 'message_detail' message.id %}">{{ message.name }} - {{ message.email }}</a>
+            </li>
+        {% empty %}
+            <li>No hay mensajes para mostrar.</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'contact' %}">Volver al formulario de contacto</a>  <!-- Enlace a la vista del formulario -->
+</body>
+{% endblock %}

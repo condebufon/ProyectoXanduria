@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    ✉ Contáctenos ✉
+{% endblock %}
+
+{% block content %}
+
+    <body>
+        <div class="contact-form-container">
+            <h1>✉ Mensaje ✉</h1>
+
+            <div class="mb-3">
+                <a>Nombre:</a>
+                <strong class="form-control">{{ message.name }}</strong>
+                <a>Email:</a>
+                <strong class="form-control">{{ message.email }}</strong>
+                <a>Mensaje:</a>
+                <textarea class="form-control"> {{message.message }}</textarea>      
+                
+        
+            <a href="{% url 'message_list' %}">Volver a la lista de mensajes</a>  <!-- Enlace a la lista de mensajes -->
+          
+        </div>
+    </body> 
+
+    
+
+
+{% endblock %}
