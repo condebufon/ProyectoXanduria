@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .forms import ContactForm
 from .models import ContactMessage
+from django.http import HttpResponseRedirect
+from django.urls import reverse
 
 
 def contact(request):
@@ -29,3 +31,8 @@ def message_list(request):
 def message_detail(request, message_id):
     message = get_object_or_404(ContactMessage, id=message_id)  # Obtener el mensaje por ID
     return render(request, 'message_detail.html', {'message': message})
+
+def delete_message(request, message_id):
+    message = get_object_or_404(ContactMessage, id=message_id)  # Obtener el mensaje por ID
+    message.delete()  # Eliminar el mensaje
+    return HttpResponseRedirect(reverse('message_list'))  # Redirigir a la lista de mensajes

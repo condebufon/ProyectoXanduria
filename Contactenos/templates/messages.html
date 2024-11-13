@@ -13,6 +13,7 @@
         {% for message in messages %}
             <li>
                 <a class="form-control" href="{% url 'message_detail' message.id %}">{{ message.name }} - {{ message.email }}</a>
+                <a href="{% url 'delete_message' message.id %}">Eliminar</a>  
             </li>
         {% empty %}
             <li>No hay mensajes para mostrar.</li>
