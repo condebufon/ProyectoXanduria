@@ -5011,7 +5011,7 @@ fieldset:disabled .btn {
     --bs-card-cap-color: ;
     --bs-card-height: ;
     --bs-card-color: ;
-    --bs-card-bg: var(--bs-body-bg);
+    --bs-card-bg: #bcbee7;
     --bs-card-img-overlay-padding: 1rem;
     --bs-card-group-margin: 0.75rem;
     position: relative;
@@ -9457,9 +9457,11 @@ fieldset:disabled .btn {
 }
 
 .text-primary {
-    background-color: #4f2561;
+    text-align: center !important;
+    background-color: #bcbee7;
     --bs-text-opacity: 1;
     color:rgba(0, 0, 0, 0.5) !important
+    
 }
 
 .text-secondary {

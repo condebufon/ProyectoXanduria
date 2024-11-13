@@ -120,6 +120,10 @@ h1 {
     /* Alto en píxeles */
 
 }
+.text-primary {
+    font-family: 'Times New Roman', Times, serif !important;
+    
+}
 
 .contenedor {
     margin-bottom: 40px;
