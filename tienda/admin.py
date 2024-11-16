@@ -31,9 +31,9 @@ class ProductoAdmin(admin.ModelAdmin):
         return ", ".join([category.nombre for category in obj.categorys.all()])
 
     mostrar_categorias.short_description = 'Categorías'
-    # readonly_fields=("created","updated")
+    readonly_fields=("created","updated")
     
-    search_fields=("nombre", "contenido", "precio","created") #campo de busqueda
+    search_fields=("nombre", "contenido", "categorys","precio","created") #campo de busqueda
     list_filter=("created",) #Filtrar
     date_hierarchy="created" #visualizacion del filtro
 

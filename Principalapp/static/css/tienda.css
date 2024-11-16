@@ -53,6 +53,7 @@ nav ul li a:hover {
 card shadow-sm {
     background: linear-gradient(180deg, #70527c, #9370DB);
     
+    
 }
 .products{
     text-align: center
@@ -157,8 +158,8 @@ h1 {
 }
 
 .img_producto {
-    width: 50%;
-    height: 50%;
+    width: 180px;
+    height: 250px;
     margin-bottom: 20px;
     /* Agrega un margen de 20px entre la imagen y el texto */
     padding-bottom: 20px;

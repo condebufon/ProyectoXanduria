@@ -20,6 +20,7 @@ def crear_producto(request):
         form = ProductoForm(request.POST, request.FILES) # formulario se llena con los datos que el usuario ha enviado.
         if form.is_valid(): # si todos los datos proporcionados cumplen con las restricciones definidas en el modelo y el formulario
             producto = form.save(commit=False)
+            product.categorys = form.cleaned_data["categorys"]
             # form.save() # se guarda el nuevo producto en la base de datos
             if not request.FILES.get('imagen'):  # Verificar si no se subió una imagen
             # Asignar una imagen por defecto si no se subió ninguna
@@ -28,6 +29,8 @@ def crear_producto(request):
                 'imagen_por_defecto.jpg',
                 default_image.read(),
                 content_type='image/jpeg'
+                
+                
                 )
             producto.save()  # Ahora guardar el producto
             
