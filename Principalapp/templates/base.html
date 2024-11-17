@@ -37,15 +37,15 @@
                         href="{% url 'tienda' %}">Tienda</a></li> <!-- Enlace a la tienda -->
                         {% if user.is_authenticated %}
                         {% if user.grupo == 'Admin' %}
-                <li><p>¡ Bienvenido jefe&nbsp; &nbsp;{{user.username}} ! &nbsp; &nbsp; <a href="{% url 'cerrar_sesion' %}"> Cerrar
-                            sesion</a></p></li>
                 <li><div>
                         <p class="nav-item"><a class="nav-link {% if request.path == '/crear/' %} active {% endif %}"
                             href="{% url 'crear_producto' %}">Crear producto</a></li> <!-- Enlace a la tienda -->
                 <li><div>
                             <p class="nav-item"><a class="nav-link {% if request.path == 'messages/' %} active {% endif %}"
                                 href="{% url 'message_list' %}">Mensajes</a></li> <!-- Enlace a la tienda -->
-                            
+                
+                <li><p>¡ Bienvenido jefe&nbsp; &nbsp;{{user.username}} ! &nbsp; &nbsp; <a href="{% url 'cerrar_sesion' %}"> Cerrar
+                                    sesion</a></p></li>            
 
                     {% else %}
                     <li><p>¡ Bienvenido Invitado&nbsp; &nbsp;{{user.username}} ! &nbsp; &nbsp; <a href="{% url 'cerrar_sesion' %}"> Cerrar

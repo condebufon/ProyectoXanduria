@@ -34,7 +34,7 @@ def crear_producto(request):
                 )
             producto.save()  # Ahora guardar el producto
             
-            return redirect('index')
+            return redirect('tienda')
     else:   # Si el método de la solicitud no es POST, se crea un nuevo formulario vacío.
         form = ProductoForm()  # Aquí se crea el formulario vacío
     return render(request, 'crear_product.html', {'form': form}) # Finalmente, se renderiza la plantilla crear_producto.html, pasando el formulario como context.
@@ -56,5 +56,5 @@ def eliminar_producto(request, id):
     producto = get_object_or_404(product, id=id)
     if request.method == 'POST':
         producto.delete()
-        return redirect('index')
+        return redirect('tienda')
     return render(request, 'crear_product.html', {'producto': producto})

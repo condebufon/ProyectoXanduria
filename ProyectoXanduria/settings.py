@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
      #my_App
+    'drf_yasg',
     'rest_framework',
     'crispy_bootstrap4',
     'crispy_forms',
