@@ -5,3 +5,4 @@ class productSerializer(serializers.ModelSerializer):
     class Meta:
         model =product
         fields=['id','nombre', 'contenido','precio']
+# 

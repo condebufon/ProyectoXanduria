@@ -1,7 +1,7 @@
-from rest_framework import viewsets
+from rest_framework.viewsets import ModelViewSet
 from .serializers import productSerializer
 from tienda.models import product
 
-class productviewset(viewsets.ModelViewSet):
+class productviewset(ModelViewSet):
     queryset=product.objects.all()
     serializer_class =productSerializer
