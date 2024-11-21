@@ -4,3 +4,5 @@ from .views import productviewset
 
 router = DefaultRouter()
 router.register(prefix='product',basename='product',viewset=productviewset)
+
+
