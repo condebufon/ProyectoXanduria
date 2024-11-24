@@ -130,9 +130,9 @@ USE_TZ = True
 
 import os
 # Configuración de archivos estáticos y de medios
-STATIC_URL = '/static/'
-MEDIA_URL = '/media/'  # URL base para acceder a los archivos de medios
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Ruta del sistema de archivos donde se almacenan los archivos subidos
+STATIC_URL  = '/static/'
+MEDIA_URL   = '/media/'  # URL base para acceder a los archivos de medios
+MEDIA_ROOT  = os.path.join(BASE_DIR, 'media')  # Ruta del sistema de archivos donde se almacenan los archivos subidos
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

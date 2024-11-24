@@ -1,6 +1,4 @@
-from django.shortcuts import (
-    render,
-)  # Importa la función render para renderizar plantillas
+from django.shortcuts import (render)  # Importa la función render para renderizar plantillas
 from carro.carro import Carro
 
 
