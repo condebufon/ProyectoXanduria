@@ -1,6 +1,7 @@
 # forms.py
 from django import forms
 from django.contrib.auth.models import User
+from autenticacion.utils import obtener_paises
 from django.contrib.auth import get_user_model
 User = get_user_model()
 
@@ -8,10 +9,14 @@ class UserRegistrationForm(forms.ModelForm): #Un ModelForm automáticamente mane
     password = forms.CharField(widget=forms.PasswordInput)
     password_confirmation = forms.CharField(widget=forms.PasswordInput)
     email = forms.EmailField()  # Campo de email visible
-
+    pais= forms.ChoiceField(choices=[], label="pais") #*******
     class Meta: # define los metadatos del formulario
         model = User    #  especifica que el formulario está basado en el modelo User
-        fields = ['username','email', 'password', 'password_confirmation']
+        fields = ['username','email', 'password', 'password_confirmation', 'pais']
+
+    def __init__(self, *args, **kwargs): #*******
+        super().__init__(*args, **kwargs)#*******
+        self.fields['pais'].choices=obtener_paises()#*******
 
     def clean(self):
         cleaned_data = super().clean()  # Contiene todos los datos del formulario que han sido limpiados (validos).

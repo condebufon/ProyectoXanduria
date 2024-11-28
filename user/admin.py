@@ -15,6 +15,7 @@ class UserAdmin(UserAdmin):  # Define una clase personalizada para la administra
                     'id',
                     'username',
                     'email',
+                    'pais',
                     'grupo',
                  ]
     # pass # Indica que no hay más código en esta clase (puede ser eliminado si no se necesita)

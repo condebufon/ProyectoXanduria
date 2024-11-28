@@ -502,6 +502,7 @@ textarea {
 
 button,
 select {
+    width: 200px;
     text-transform: none
 }
 
