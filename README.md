@@ -59,5 +59,7 @@ pip install -r requirements.txt
 * [ ] generar noticias y eventos
 
 cualquier duda o observacion contactar a: https://api.whatsapp.com/send/?phone=573157511161
- 
+
+<link rel="stylesheet" href="styles.css">
+<div class="elemento"></div> 
  

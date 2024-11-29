@@ -6,7 +6,7 @@
       background-position: 100% 0; /* Posición final del fondo */
     }
   }
-  .elemento {
+  body {
     background: url(pared.png) repeat-x; /* Imagen de fondo que se repite horizontalmente */
     animation: MoverFondo 10s linear infinite; /* Aplicación de la animación */
   }
