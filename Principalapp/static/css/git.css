@@ -1,0 +1,12 @@
+@keyframes MoverFondo {
+    0% {
+      background-position: 0 0; /* Posición inicial del fondo */
+    }
+    100% {
+      background-position: 100% 0; /* Posición final del fondo */
+    }
+  }
+  .elemento {
+    background: url(pared.png) repeat-x; /* Imagen de fondo que se repite horizontalmente */
+    animation: MoverFondo 10s linear infinite; /* Aplicación de la animación */
+  }

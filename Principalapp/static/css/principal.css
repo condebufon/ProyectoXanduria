@@ -235,3 +235,22 @@ a.word-car-login.active {
     background-color: #380404; /* Color de fondo para el elemento activo */
     border-radius: 5px; /* Bordes redondeados */
 }
+#id_pais{
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+}
+#id_pais.p{
+
+    
+}
