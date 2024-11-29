@@ -60,6 +60,16 @@ pip install -r requirements.txt
 
 cualquier duda o observacion contactar a: https://api.whatsapp.com/send/?phone=573157511161
 
-<link rel="stylesheet" href="styles.css">
-<div class="elemento"></div> 
+@keyframes MoverFondo {
+    0% {
+      background-position: 0 0; /* Posición inicial del fondo */
+    }
+    100% {
+      background-position: 100% 0; /* Posición final del fondo */
+    }
+  }
+  body {
+    background: url(pared.png) repeat-x; /* Imagen de fondo que se repite horizontalmente */
+    animation: MoverFondo 10s linear infinite; /* Aplicación de la animación */
+  }
  
