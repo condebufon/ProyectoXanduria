@@ -58,6 +58,7 @@ pip install -r requirements.txt
 * [ ] Adaptarlo con javascrips 
 * [ ] generar noticias y eventos
 <h1>⏩⏩extra o datos adicionales: <div id="extra"></div></h1>
+
 Paso a Paso para Configurar un Archivo.env
 1. Crear el archivo.env
 Dirígete a la raíz de tu
