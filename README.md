@@ -68,6 +68,7 @@ En Linux/MacOS:
  .env
 ```
 En Windows: Puedes usar un editor de texto para crear un archivo vacío y guardarlo como .env.
+
 2. Definir tus variables de entorno
 Abre el archivo .envy escribe
 NOMBRE_VARIABLE=valor
