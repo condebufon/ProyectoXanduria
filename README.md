@@ -58,6 +58,88 @@ pip install -r requirements.txt
 * [ ] Adaptarlo con javascrips 
 * [ ] generar noticias y eventos
 
+Paso a Paso para Configurar un Archivo.env
+1. Crear el archivo.env
+Dirígete a la raíz de tu
+Crea un archivo llamado .env.
+En Linux/MacOS:
+```
+ .env
+```
+En Windows: Puedes usar un editor de texto para crear un archivo vacío y guardarlo como .env.
+2. Definir tus variables de entorno
+Abre el archivo .envy escribe
+NOMBRE_VARIABLE=valor
+```
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=mi-contraseña-secreta
+API_KEY=tu-api-key
+```
+3. Ignorar el archivo .enven Git
+Para evitar que este archivo sensible se suba a tu repositorio, debes asegurarte de que esté incluido en el archivo .gitignore.
+
+Abre o crea un archivo .gitignoreen la raíz del proyecto.
+Añade la siguiente:
+
+```
+# Ignorar archivo .env
+.env
+```
+Si ya habías añadido accidentalmente el archivo .enval repositorio, eliminalo del historial de Git:
+```
+git rm --cached .env
+```
+
+4. Proporcionar un archivo de ejemplo ( .env.example)
+Para que otros desarrolladores sepan qué variables deben configurar, cree un archivo llamado .env.example.
+
+Incluye solo los nombres de las variables y valores genéricos o ejemplos:
+```
+DB_HOST=tu-servidor
+DB_USER=tu-usuario
+DB_PASSWORD=tu-contraseña
+API_KEY=tu-api-key
+```
+5. Usar el archivo .enven en el proyecto
+En el código de tu proyecto, utiliza librerías o métodos para cargar las variables del archivo .env.
+
+Node.js (desventaja dotenv) :
+Instadotenv:
+```
+npm install dotenv
+```
+Lueg.env:
+```
+require('dotenv').config();
+con
+console.log(process.env.DB_HOST); // Accede a tus variables
+```
+Python (con python-dotenv) :
+Instapython-dotenv:
+```
+pip install python-dotenv
+```
+from dotenv import load_dotenv
+
+```
+import os
+
+load_dotenv()
+db_host = os.getenv(
+
+load_dotenv()
+"DB_HOST")
+print(db_host)
+```
+
+6. Usar servicios de secretos en producción
+En entornos de producción, evite usar directamente archivos .env. es
+
+Administrador de secretos de AWS
+Almacén de claves de Azure
+Administrador secreto de Google
+
 cualquier duda o observacion contactar a: https://api.whatsapp.com/send/?phone=573157511161
 
 

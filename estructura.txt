@@ -1,0 +1,44 @@
+ProyectoXanduria
++-- autenticacion
+¦   +-- __pycache__
+¦   +-- migrations
+¦   ¦   +-- __pycache__
+¦   +-- templates
+¦   ¦   +-- login
+¦   ¦   +-- registro
+¦   +-- api
+¦       +-- __pycache__
++-- carro
+¦   +-- __pycache__
+¦   +-- migrations
+¦       +-- __pycache__
++-- Contactenos
+¦   +-- __pycache__
+¦   +-- migrations
+¦   ¦   +-- __pycache__
+¦   +-- static
+¦   ¦   +-- img
+¦   +-- templates
+¦   +-- api
+¦       +-- __pycache__
++-- media
+¦   +-- tienda
+¦   ¦   +-- media
++-- pedidos
+¦   +-- __pycache__
+¦   +-- migrations
+¦       +-- __pycache__
++-- tienda
+¦   +-- __pycache__
+¦   +-- migrations
+¦   ¦   +-- __pycache__
+¦   +-- templates
+¦   ¦   +-- carro
+¦   +-- api
+¦       +-- __pycache__
++-- user
+    +-- __pycache__
+    +-- migrations
+    ¦   +-- __pycache__
+    +-- api
+        +-- __pycache__

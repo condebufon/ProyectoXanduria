@@ -1,0 +1,59 @@
+Listado de rutas de carpetas para el volumen Google Drive
+El n£mero de serie del volumen es 1983-1116
+G:.
+ÃÄÄÄContactenos
+³   ÃÄÄÄ__pycache__
+³   ÃÄÄÄmigrations
+³   ³   ÀÄÄÄ__pycache__
+³   ÃÄÄÄstatic
+³   ³   ÀÄÄÄimg
+³   ÃÄÄÄtemplates
+³   ÀÄÄÄapi
+³       ÀÄÄÄ__pycache__
+ÃÄÄÄPrincipalapp
+³   ÃÄÄÄ__pycache__
+³   ÃÄÄÄmigrations
+³   ³   ÀÄÄÄ__pycache__
+³   ÃÄÄÄstatic
+³   ³   ÃÄÄÄcss
+³   ³   ÃÄÄÄimg
+³   ³   ³   ÀÄÄÄredes
+³   ³   ÀÄÄÄjs
+³   ÀÄÄÄtemplates
+ÃÄÄÄProyectoXanduria
+³   ÀÄÄÄ__pycache__
+ÃÄÄÄautenticacion
+³   ÃÄÄÄ__pycache__
+³   ÃÄÄÄmigrations
+³   ³   ÀÄÄÄ__pycache__
+³   ÃÄÄÄtemplates
+³   ³   ÃÄÄÄlogin
+³   ³   ÀÄÄÄregistro
+³   ÀÄÄÄapi
+³       ÀÄÄÄ__pycache__
+ÃÄÄÄcarro
+³   ÃÄÄÄ__pycache__
+³   ÀÄÄÄmigrations
+³       ÀÄÄÄ__pycache__
+ÃÄÄÄmedia
+³   ÃÄÄÄtienda
+³   ÀÄÄÄmedia
+³       ÀÄÄÄtienda
+ÃÄÄÄpedidos
+³   ÃÄÄÄ__pycache__
+³   ÀÄÄÄmigrations
+³       ÀÄÄÄ__pycache__
+ÃÄÄÄtienda
+³   ÃÄÄÄ__pycache__
+³   ÃÄÄÄmigrations
+³   ³   ÀÄÄÄ__pycache__
+³   ÃÄÄÄtemplates
+³   ³   ÀÄÄÄcarro
+³   ÀÄÄÄapi
+³       ÀÄÄÄ__pycache__
+ÀÄÄÄuser
+    ÃÄÄÄ__pycache__
+    ÃÄÄÄmigrations
+    ³   ÀÄÄÄ__pycache__
+    ÀÄÄÄapi
+        ÀÄÄÄ__pycache__
