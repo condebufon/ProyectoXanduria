@@ -101,44 +101,6 @@ DB_USER=tu-usuario
 DB_PASSWORD=tu-contraseña
 API_KEY=tu-api-key
 ```
-5. Usar el archivo .enven en el proyecto
-En el código de tu proyecto, utiliza librerías o métodos para cargar las variables del archivo .env.
-
-Node.js (desventaja dotenv) :
-Instadotenv:
-```
-npm install dotenv
-```
-Lueg.env:
-```
-require('dotenv').config();
-con
-console.log(process.env.DB_HOST); // Accede a tus variables
-```
-Python (con python-dotenv) :
-Instapython-dotenv:
-```
-pip install python-dotenv
-```
-from dotenv import load_dotenv
-
-```
-import os
-
-load_dotenv()
-db_host = os.getenv(
-
-load_dotenv()
-"DB_HOST")
-print(db_host)
-```
-
-6. Usar servicios de secretos en producción
-En entornos de producción, evite usar directamente archivos .env. es
-
-Administrador de secretos de AWS
-Almacén de claves de Azure
-Administrador secreto de Google
 
 cualquier duda o observacion contactar a: https://api.whatsapp.com/send/?phone=573157511161
 
