@@ -103,8 +103,9 @@ DB_USER=tu-usuario
 DB_PASSWORD=tu-contraseña
 API_KEY=tu-api-key
 ```
-si desean probar el juego descargarlo en https://drive.google.com/open?id=1L8H0JtfT3nl2YR0DVe2EMQzmWdMfyXL_&usp=drive_fs
-y la version android https://drive.google.com/open?id=1kNHtxqB53Gt0ZWYp2amvuyfK5MsOFWiG&usp=drive_fs
+si desean probar el juego descargarlo en: https://drive.google.com/file/d/1L8H0JtfT3nl2YR0DVe2EMQzmWdMfyXL_/view?pli=1
+
+la version android https://drive.google.com/file/d/1kNHtxqB53Gt0ZWYp2amvuyfK5MsOFWiG/view?pli=1
 
 cualquier duda o observacion contactar a: https://api.whatsapp.com/send/?phone=573157511161
 
