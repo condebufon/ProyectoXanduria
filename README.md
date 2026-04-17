@@ -103,7 +103,7 @@ DB_USER=tu-usuario
 DB_PASSWORD=tu-contraseña
 API_KEY=tu-api-key
 ```
-si desean probar el juego descargarlo en: https://drive.google.com/file/d/1L8H0JtfT3nl2YR0DVe2EMQzmWdMfyXL_/view?pli=1
+si desean probar el juego vercion windows descargarlo en: https://drive.google.com/file/d/1L8H0JtfT3nl2YR0DVe2EMQzmWdMfyXL_/view?pli=1
 
 la version android https://drive.google.com/file/d/1kNHtxqB53Gt0ZWYp2amvuyfK5MsOFWiG/view?pli=1
 
